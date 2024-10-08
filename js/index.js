@@ -58,3 +58,56 @@ var sample = null
 // else{
 //     console.log("ths condition is false") //answer
 // }
+
+/*var navList = document.getElementById('navList');
+console.log('search by id', navList);
+
+var ulList = document.getElementsByClassName('ulList');
+console.log('search by class', ulList);*/ //ulList[0]
+
+/*var h1 = document.getElementsByTagName('h1')[0];
+console.log(h1);
+// h1.innerHTML = "this is from js";
+h1.innerText = "this is from js";
+h1.style.color = 'blue';
+h1.style.backgroundColor = 'yellow'; */
+
+// function
+/*var body = document.getElementsByTagName('body')[0]
+function changeBGRed(red){
+    body.style.background = 'red';
+}
+function changeBGBlue(blue){
+    body.style.background = 'blue';
+}
+function changeBGGreen(green){
+    body.style.background = 'green';
+}
+function changeBGYellow(yellow){
+    body.style.background = 'yellow';
+}
+function changeBGBlack(black){
+    body.style.background = 'black';
+}*/
+
+var body = document.getElementsByTagName('body')[0];
+function changeBG(color){
+    body.style.backgroundColor = color;
+}
+
+var h1 = document.getElementsByTagName('h1')[0];
+function changH1(){
+    if(h1.innerHTML == "new page"){
+    h1.innerText = "this is from js function";
+    }
+    else{
+        h1.innerText = "new page";
+    }
+}
+
+var screen = document.getElementById('screen');
+function fullScreen(){
+    // console.log(fullScreen)
+    screen.requestFullscreen();
+    document.exitFullscreen();
+}
