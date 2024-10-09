@@ -24,3 +24,24 @@ userForm.addEventListener('submit', function(event){
     // append or appendChild
     users.appendChild(firstH1);
 })
+
+
+var number1 = document.getElementById('number1');
+var number2 = document.getElementById('number2');
+var operation = document.getElementById('operation');
+var result = document.getElementById('result');
+
+function calculate(){
+    if(operation.value == '+'){
+        result.innerHTML = parseInt(number1.value) + parseInt(number2.value);
+    }
+    else if(operation.value == '-'){
+        result.innerHTML = parseInt(number1.value) - parseInt(number2.value);
+    }
+    else if(operation.value == '*'){
+        result.innerHTML = parseInt(number1.value) * parseInt(number2.value);
+    }
+    else if(operation.value == '/'){
+        result.innerHTML = parseInt(number1.value) / parseInt(number2.value);
+    }
+}

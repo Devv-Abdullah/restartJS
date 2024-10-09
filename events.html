@@ -19,14 +19,17 @@
     </form>
     <div id="users"></div>
 
-    <input type="number">
-    <select>
+    <br><br>
+    <input id="number1" type="number">
+    <select id="operation">
     <option value="+">+</option>
     <option value="-">-</option>
     <option value="*">*</option>
     <option value="/">/</option>
     </select>
-    <input type="number">
+    <input id="number2" type="number">
+    <button onclick="calculate()" type="submit">Calculate</button>
+    <p id="result">result: </p>
 
 
     <script src='./js/event.js'></script>
