@@ -45,3 +45,22 @@ function calculate(){
         result.innerHTML = parseInt(number1.value) / parseInt(number2.value);
     }
 }
+
+
+var primeNumber = document.getElementById('primeNumber');
+var result2 = document.getElementById('result2');
+function isPrime(){
+    // console.log(primeNumber.value);
+    // var isPrime = true;
+    for(var i=2; i<parseInt(primeNumber.value); i++){
+        if(primeNumber.value % i == 0){
+            // isPrime = false;
+            result2.innerText = "this is not a prime number";
+            break;
+        }
+        else{
+            // isPrime = true;
+            result2.innerText = "this is a prime number";
+        }
+    }
+}
