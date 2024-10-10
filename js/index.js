@@ -59,6 +59,8 @@ var sample = null
 //     console.log("ths condition is false") //answer
 // }
 
+//js part 3
+
 /*var navList = document.getElementById('navList');
 console.log('search by id', navList);
 
