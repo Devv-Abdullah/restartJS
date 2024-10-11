@@ -25,7 +25,7 @@ registerForm.addEventListener('submit', function(event){
     allUsers.push(userData);
     }
     else{
-        alert("The password and the confirmPassword must be the same");
+        alert("password and the confirmPassword are not the same");
     }
 
     // JSON: javascript object nation اوبجكت على هيئة سترينغ
