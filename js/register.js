@@ -23,6 +23,7 @@ registerForm.addEventListener('submit', function(event){
     console.log(allUsers);
     if(password.value == confirmPassword.value){
     allUsers.push(userData);
+    // window.location.href = 'login.html'
     }
     else{
         alert("password and the confirmPassword are not the same");
