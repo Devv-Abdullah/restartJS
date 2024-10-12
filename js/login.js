@@ -10,7 +10,7 @@ button.addEventListener('click', function(e){
     // console.log(password.value);
 
     for(var i=0; i<allUsers.length; i++){ //طول هاي الليست
-        if(allUsers[i].email == email.value && allUsers[i].password == password.value){
+        /*if(allUsers[i].email == email.value && allUsers[i].password == password.value){
             Swal.fire({
                 position: "top-center",
                 icon: "success",
@@ -27,7 +27,33 @@ button.addEventListener('click', function(e){
                 text: "wrong email or password",
                 // footer: '<a href="#">Why do I have this issue?</a>'
               });
-        }
+        }*/
+
+              if(allUsers[i].email != email.value){
+                Swal.fire({
+                            icon: "error",
+                            title: "wrong email",
+                            text: "Something went wrong!",
+                            footer: '<a href="#">Why do I have this issue?</a>'
+                          });
+            }
+            else if(allUsers[i].password != password.value){
+                Swal.fire({
+                            icon: "error",
+                            title: "wrong password",
+                            text: "Something went wrong!",
+                            footer: '<a href="#">Why do I have this issue?</a>'
+                          });
+            }
+            else{
+                Swal.fire({
+                            position: "top-center",
+                            icon: "success",
+                            title: "email already exists",
+                            showConfirmButton: false,
+                            timer: 1500
+                          });
+            }
     }
 })
 
